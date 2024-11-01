@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Quên Mật Khẩu";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/stylepro.css" />
+    <link rel="stylesheet" href="~/Content/loginRegister.css" />
+    <style>
+        .forget-pass-form {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-table {
+            width: 100%;
+        }
+
+            .form-table td {
+                padding: 1px;
+            }
+
+            .form-table label {
+                font-weight: bold;
+                color: #333;
+            }
+
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            font-size: 1em;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container mt-5">
+        <h2 class="text-center mt-lg-5">Quên Mật Khẩu</h2>
+        <form method="post" action="/User/ForgetPass" class="forget-pass-form mt-4">
+            <table class="form-table">
+                <tr>
+                    <td><label for="email">Địa chỉ Email:</label></td>
+                    <td><input type="email" id="email" name="email" required class="form-control" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <button type="submit" class="btn btn-primary">Gửi Yêu Cầu</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+</body>
+</html>

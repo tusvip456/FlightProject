@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Thành viên nhóm";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<main aria-labelledby="title" class="container mt-5">
+    <div class="p-4 rounded shadow-lg bg-light">
+        <h2 id="title" class="text-primary mb-3">@ViewBag.Title</h2>
+        <h3 class="text-muted mb-4 text-center">@ViewBag.Message</h3>
+
+        <ul class="list-group list-group-flush mb-5">
+            @foreach (string member in ViewBag.Members)
+            {
+                <li class="list-group-item d-flex justify-content-centertext-dark">
+                    <i class="bi bi-person-circle me-2 text-primary"></i>@member
+                </li>
+            }
+        </ul>
+
+        <h3 class="text-success mb-3">Điều khoản và Điều kiện</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item text-secondary">Thành viên cần tuân thủ quy định của nhóm và nhà trường.</li>
+            <li class="list-group-item text-secondary">Mọi hoạt động phải được thông báo và đồng ý bởi các thành viên trong nhóm.</li>
+            <li class="list-group-item text-secondary">Không được sử dụng tài nguyên nhóm cho mục đích cá nhân mà không có sự đồng ý của các thành viên.</li>
+            <li class="list-group-item text-secondary">Các thành viên phải tham gia đầy đủ vào các buổi họp và hoạt động của nhóm.</li>
+            <li class="list-group-item text-secondary">Bảo mật thông tin và tài liệu của nhóm là rất quan trọng.</li>
+        </ul>
+    </div>
+</main>

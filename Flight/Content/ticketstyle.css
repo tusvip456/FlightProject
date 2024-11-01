@@ -1,0 +1,51 @@
+﻿body {
+    background-color: #f8f9fa; /* Màu nền sáng */
+}
+
+h2 {
+    text-align: center; /* Căn giữa tiêu đề */
+    margin: 20px 0;
+    color: #343a40; /* Màu chữ */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+.airline-name {
+    display: block;
+    
+    transform-origin: left bottom;
+    margin: 0 auto;
+    width: 100px; /* Điều chỉnh chiều rộng cho ô */
+    white-space: nowrap; /* Ngăn chặn ngắt dòng */
+}
+
+
+.ticket-table th, .ticket-table td {
+    text-align: center; /* Căn giữa các ô */
+    padding: 15px; /* Khoảng cách bên trong các ô */
+}
+
+.ticket-table th {
+    background-color: #007bff; /* Màu nền cho tiêu đề */
+    color: white; /* Màu chữ cho tiêu đề */
+}
+
+.ticket-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Màu nền cho các hàng chẵn */
+}
+
+.ticket-table button {
+    margin-top: 5px; /* Khoảng cách trên nút */
+}
+.flight-time {
+    font-weight: bold; /* In đậm */
+}

@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Đăng nhập/ Đăng ký";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Content/loginRegister.css" />
+    <link rel="stylesheet" href="~/Content/stylepro.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    <main>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="/Account/Register" method="post">
+                    <h1>Tạo Tài Khoản</h1>
+                    <input type="text" placeholder="Họ và tên" name="name" required />
+                    <input type="text" placeholder="Số điện thoại" name="phoneNum" required />
+                    <input type="email" placeholder="Email" name="email" required />
+                    <input type="password" placeholder="Mật khẩu" name="password" required />
+                    <input type="password" placeholder="Xác nhận mật khẩu" name="confirmPass" required />
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="terms" required /> Tôi đồng ý với <a href="~/Home/About"><strong>điều khoản và điều kiện</strong></a>.
+                        </label>
+                    </div>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="offers" /> Tôi muốn nhận ưu đãi và thông tin mới nhất qua email.
+                        </label>
+                    </div>
+                    <button type="submit">Đăng Ký</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="/Account/Login" method="post">
+                    <h1>Đăng Nhập</h1>
+                    <input type="text" placeholder="Email hoặc Tên người dùng" name="emailOrUsername" required />
+                    <input type="password" placeholder="Mật khẩu" name="password" required />
+                    <a href="ForgetPass">Quên mật khẩu?</a>
+                    <button type="submit">Đăng Nhập</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Chào Mừng Trở Lại!</h1>
+                        <p>Để kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
+                        <button class="ghost" id="signIn">Đăng Nhập</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Xin Chào!</h1>
+                        <p>Nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
+                        <button class="ghost" id="signUp">Đăng Ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const container = document.getElementById('container');
+
+            signUpButton.addEventListener('click', () => {
+                container.classList.add('right-panel-active');
+            });
+
+            signInButton.addEventListener('click', () => {
+                container.classList.remove('right-panel-active');
+            });
+        </script>
+        <footer>
+            <p>&copy; 2024 Trường Đại học Ngoại ngữ-Tin học TPHCM. Đã đăng ký bản quyền.</p>
+        </footer>
+    </main>
+</body>
+</html>
