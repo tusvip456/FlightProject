@@ -15,122 +15,136 @@
     <link rel="stylesheet" href="~/Content/ticketstyle.css" />
 </head>
 <body>
-    <h2>Chọn Chuyến Bay</h2>
+    <div class="container mt-3 text-center">
+        <h2>Chọn Chuyến Bay</h2>
+        <div class="d-flex justify-content-center">
+            <table class="table table-striped ticket-table">
+                <thead>
+                    <tr>
+                        <th>Giờ Bay / Hãng máy bay</th>
+                        <th>Vietnam Airlines</th>
+                        <th>Bamboo Airways</th>
+                        <th>Vietjet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="flight-time">06:00</td>
+                        <td>1,500,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1500000">Chọn vé này</button></td>
+                        <td>1,300,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1300000">Chọn vé này</button></td>
+                        <td>1,200,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1200000">Chọn vé này</button></td>
+                    </tr>
+                    <tr>
+                        <td class="flight-time" data-flight="09:00">09:00</td>
+                        <td>1,700,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1700000">Chọn vé này</button></td>
+                        <td>1,400,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1400000">Chọn vé này</button></td>
+                        <td>1,350,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1350000">Chọn vé này</button></td>
+                    </tr>
+                    <tr>
+                        <td class="flight-time">12:00</td>
+                        <td>1,600,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1600000">Chọn vé này</button></td>
+                        <td>1,500,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1500000">Chọn vé này</button></td>
+                        <td>1,450,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1450000">Chọn vé này</button></td>
+                    </tr>
+                    <tr>
+                        <td class="flight-time">15:00</td>
+                        <td>1,800,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1800000">Chọn vé này</button></td>
+                        <td>1,650,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1650000">Chọn vé này</button></td>
+                        <td>1,600,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1600000">Chọn vé này</button></td>
+                    </tr>
+                    <tr>
+                        <td class="flight-time">18:00</td>
+                        <td>1,900,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1900000">Chọn vé này</button></td>
+                        <td>1,750,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1750000">Chọn vé này</button></td>
+                        <td>1,700,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1700000">Chọn vé này</button></td>
+                    </tr>
+                    <tr>
+                        <td class="flight-time">21:00</td>
+                        <td>2,000,000 VNĐ <button class="btn btn-primary select-ticket" data-price="2000000">Chọn vé này</button></td>
+                        <td>1,900,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1900000">Chọn vé này</button></td>
+                        <td>1,850,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1850000">Chọn vé này</button></td>
+                    </tr>
+                    <tr>
+                        <td class="flight-time">22:00</td>
+                        <td>2,100,000 VNĐ <button class="btn btn-primary select-ticket" data-price="2100000">Chọn vé này</button></td>
+                        <td>1,950,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1950000">Chọn vé này</button></td>
+                        <td>1,900,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1900000">Chọn vé này</button></td>
+                    </tr>
+                    <tr>
+                        <td class="flight-time">23:00</td>
+                        <td>2,200,000 VNĐ <button class="btn btn-primary select-ticket" data-price="2200000">Chọn vé này</button></td>
+                        <td>2,000,000 VNĐ <button class="btn btn-primary select-ticket" data-price="2000000">Chọn vé này</button></td>
+                        <td>1,950,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1950000">Chọn vé này</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
 
-    <table class="table table-striped ticket-table">
-        <thead>
-            <tr>
-                <th>Giờ Bay/ Hãng máy bay</th>
-                <th>VN Airlines</th>
-                <th>Bamboo Airways</th>
-                <th>Vietjet</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="flight-time">06:00</td>
-                <td>1,500,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1500000">Chọn vé này</button></td>
-                <td>1,300,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1300000">Chọn vé này</button></td>
-                <td>1,200,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1200000">Chọn vé này</button></td>
-            </tr>
-            <tr>
-                <td><strong>09:00</strong></td>
-                <td>1,700,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1700000">Chọn vé này</button></td>
-                <td>1,400,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1400000">Chọn vé này</button></td>
-                <td>1,350,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1350000">Chọn vé này</button></td>
-            </tr>
-            <tr>
-                <td><strong>12:00</strong></td>
-                <td>1,600,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1600000">Chọn vé này</button></td>
-                <td>1,500,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1500000">Chọn vé này</button></td>
-                <td>1,450,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1450000">Chọn vé này</button></td>
-            </tr>
-            <tr>
-                <td><strong>15:00</strong></td>
-                <td>1,800,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1800000">Chọn vé này</button></td>
-                <td>1,650,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1650000">Chọn vé này</button></td>
-                <td>1,600,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1600000">Chọn vé này</button></td>
-            </tr>
-            <tr>
-                <td><strong>18:00</strong></td>
-                <td>1,900,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1900000">Chọn vé này</button></td>
-                <td>1,750,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1750000">Chọn vé này</button></td>
-                <td>1,700,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1700000">Chọn vé này</button></td>
-            </tr>
-            <tr>
-                <td><strong>21:00</strong></td>
-                <td>2,000,000 VNĐ <button class="btn btn-primary select-ticket" data-price="2000000">Chọn vé này</button></td>
-                <td>1,900,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1900000">Chọn vé này</button></td>
-                <td>1,850,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1850000">Chọn vé này</button></td>
-            </tr>
-            <tr>
-                <td><strong>22:00</strong></td>
-                <td>2,100,000 VNĐ <button class="btn btn-primary select-ticket" data-price="2100000">Chọn vé này</button></td>
-                <td>1,950,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1950000">Chọn vé này</button></td>
-                <td>1,900,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1900000">Chọn vé này</button></td>
-            </tr>
-            <tr>
-                <td><strong>23:00</strong></td>
-                <td>2,200,000 VNĐ <button class="btn btn-primary select-ticket" data-price="2200000">Chọn vé này</button></td>
-                <td>2,000,000 VNĐ <button class="btn btn-primary select-ticket" data-price="2000000">Chọn vé này</button></td>
-                <td>1,950,000 VNĐ <button class="btn btn-primary select-ticket" data-price="1950000">Chọn vé này</button></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- Modal -->
-    <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="ticketModalLabel">Thông Tin Vé Đã Chọn</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p id="ticketClass"></p>
-                    <p id="ticketBenefits"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                    <button type="button" class="btn btn-primary" id="confirmTicket">Xác Nhận</button>
+        <!-- Modal -->
+        <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ticketModalLabel">Thông Tin Vé Đã Chọn</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="ticketClass"></p>
+                        <p id="ticketBenefits"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <button type="button" class="btn btn-primary" id="confirmTicket">Xác Nhận</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.select-ticket').click(function () {
-                const price = $(this).data('price');
-                let ticketClass;
-                let ticketBenefits;
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.select-ticket').click(function () {
+                    $('.select-ticket').removeClass('active'); // Xóa active từ tất cả
+                    $(this).addClass('active'); // Thêm active cho nút đang chọn
 
-                // Phân loại vé và ưu đãi
-                if (price <= 1200000) {
-                    ticketClass = "Vé Thường";
-                    ticketBenefits = "Không có ưu đãi.";
-                } else if (price >= 1600000 && price < 2000000) {
-                    ticketClass = "Vé Thương Gia";
-                    ticketBenefits = "Ưu đãi: Ăn nhẹ miễn phí và 10% giảm giá cho chuyến bay tiếp theo.";
-                } else { // price >= 2000000
-                    ticketClass = "Vé VIP";
-                    ticketBenefits = "Ưu đãi: Phục vụ ăn uống cao cấp, quyền truy cập lounge và 20% giảm giá cho chuyến bay tiếp theo.";
-                }
+                    const price = $(this).data('price');
+                    const flightTime = $(this).data('flight');
+                    let ticketClass;
+                    let ticketBenefits;
 
-                // Hiển thị thông tin vé đã chọn
-                $('#ticketClass').text(`Hạng Vé: ${ticketClass}`);
-                $('#ticketBenefits').text(`Ưu Đãi: ${ticketBenefits}`);
-                $('#ticketModal').modal('show');
+                    // Phân loại vé và ưu đãi
+                    if (price <= 1200000) {
+                        ticketClass = "Vé Thường";
+                        ticketBenefits = "Không có ưu đãi.";
+                    } else if (price >= 1600000 && price < 2000000) {
+                        ticketClass = "Vé Thương Gia";
+                        ticketBenefits = "Ăn nhẹ miễn phí và 10% giảm giá cho chuyến bay tiếp theo.";
+                    } else { // price >= 2000000
+                        ticketClass = "Vé VIP";
+                        ticketBenefits = "Phục vụ ăn uống cao cấp, quyền truy cập lounge và 20% giảm giá cho chuyến bay tiếp theo.";
+                    }
+
+                    // Hiển thị thông tin vé đã chọn
+                    $('#ticketClass').text(`Hạng Vé: ${ticketClass}`);
+                    $('#flightTime').text(`Giờ bay: ${flightTime}`);
+                    $('#ticketBenefits').text(`Ưu Đãi: ${ticketBenefits}`);
+                    $('#ticketModal').modal('show');
+                });
+
+                // Xử lý khi người dùng xác nhận chọn vé cũng như lấy giá vé
+                $('#confirmTicket').click(function () {
+                    const price = $('.select-ticket.active').data('price'); // Lấy giá từ nút đã chọn
+                    const flightTime = $('#flightTime').text().replace('Giờ bay: ', ''); // Lấy giờ bay
+                    const ticketClass = $("#ticketClass").text().replace("Hạng Vé: ", ""); // Lấy giá trị hạng vé
+                    const ticketBenefits = $("#ticketBenefits").text().replace("Ưu Đãi: ", ""); // Lấy ưu đãi
+
+                    // Chuyển hướng đến trang detail với các tham số
+                    window.location.href = `/Ticket/Details?class=${encodeURIComponent(ticketClass)}&price=${price}&benefits=${encodeURIComponent(ticketBenefits)}&flightTime=${encodeURIComponent(flightTime)}`;
+
+                });
             });
-
-            // Xử lý khi người dùng xác nhận chọn vé
-            $('#confirmTicket').click(function () {
-                // Chuyển hướng đến trang detail
-                window.location.href = '/Ticket/Details'; // Cập nhật URL cho trang chi tiết
-            });
-        });
-    </script>
+        </script>
 </body>
 </html>

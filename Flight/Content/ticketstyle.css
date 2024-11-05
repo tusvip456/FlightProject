@@ -9,7 +9,7 @@ h2 {
 }
 
 .table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
 }
 
@@ -21,7 +21,6 @@ h2 {
 
 .airline-name {
     display: block;
-    
     transform-origin: left bottom;
     margin: 0 auto;
     width: 100px; /* Điều chỉnh chiều rộng cho ô */
@@ -48,4 +47,53 @@ h2 {
 }
 .flight-time {
     font-weight: bold; /* In đậm */
+}
+
+
+
+/* Cải thiện kiểu dáng của card */
+.card {
+    border: 1px solid #e3e6f0; /* Viền card */
+    border-radius: 0.5rem; /* Bo góc */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Đổ bóng cho card */
+}
+
+/* Tùy chỉnh tiêu đề card */
+.card-header {
+    background-color: #007bff; /* Màu nền tiêu đề */
+    color: white; /* Màu chữ */
+    font-weight: bold; /* Chữ đậm */
+}
+
+/* Cải thiện khoảng cách và kích thước của các label và input */
+.form-label {
+    margin-bottom: 0.5rem; /* Khoảng cách dưới label */
+}
+
+input[type="text"],
+input[type="email"] {
+    border-radius: 0.25rem; /* Bo góc cho input */
+}
+
+/* Tùy chỉnh nút */
+.btn-success {
+    background-color: #28a745; /* Màu nền nút */
+    border-color: #28a745; /* Màu viền nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+    .btn-success:hover {
+        background-color: #218838; /* Màu nền khi hover */
+        border-color: #1e7e34; /* Màu viền khi hover */
+    }
+
+/* Tùy chỉnh các đoạn văn bản */
+.card-body p {
+    font-size: 1.1rem; /* Kích thước chữ */
+    line-height: 1.5; /* Khoảng cách giữa các dòng */
+}
+
+/* Cải thiện khoảng cách tổng thể */
+.container {
+    padding: 2rem; /* Padding cho container */
 }

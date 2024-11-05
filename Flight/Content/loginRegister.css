@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+﻿
 
 * {
     box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
+/*    font-family: 'Montserrat', sans-serif;*/
     height: calc(100vh - 60px); /* Điều chỉnh cho chiều cao header */
 }
 
@@ -243,17 +243,17 @@ input {
 footer {
     background-color: #222;
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     bottom: 0;
     position: fixed;
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 999;
+    z-index: 0;
 }
 
     footer p {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     footer i {

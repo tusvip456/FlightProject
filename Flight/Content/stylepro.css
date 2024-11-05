@@ -121,3 +121,25 @@
     max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng */
     height: auto; /* Giữ tỷ lệ khung hình */
 }
+.logo-img {
+    height: 50px; /* Adjust logo size */
+    margin-right: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Consistent background */
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+#clock {
+    font-size: 1.5em;
+    font-weight: bold;
+}
